@@ -4,7 +4,9 @@ open Lake DSL
 package «lean4-example» {
   moreLinkArgs := #[
     "-L./.lake/packages/LeanCopilot/.lake/build/lib",
-    "-lctranslate2"
+    "-llibctranslate2",
+    "-L./.lake/packages/LeanCopilot/.lake/build/lib",
+    "-llibopenblas"
   ]
 }
 
@@ -12,4 +14,4 @@ package «lean4-example» {
 lean_lib «Lean4Example» {
 }
 
-require LeanCopilot from git "https://github.com/lean-dojo/LeanCopilot.git" @ "v4.16.0"
+require LeanCopilot from git "https://github.com/durant42040/LeanCopilot.git" @ "windows-support"
