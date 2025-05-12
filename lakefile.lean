@@ -14,4 +14,4 @@ package «lean4-example» {
 lean_lib «Lean4Example» {
 }
 
-require LeanCopilot from git "https://github.com/durant42040/LeanCopilot.git" @ "windows-support"
+require LeanCopilot from git "https://github.com/lean-dojo/LeanCopilot.git" @ "main"
