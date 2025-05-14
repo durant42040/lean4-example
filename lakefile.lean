@@ -2,10 +2,6 @@ import Lake
 open Lake DSL
 
 package «lean4-example» {
-  moreLinkArgs := #[
-    "-L./.lake/packages/LeanCopilot/.lake/build/lib",
-    "-lctranslate2"
-  ]
 }
 
 @[default_target]
