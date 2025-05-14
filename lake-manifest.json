@@ -5,7 +5,7 @@
    "type": "git",
    "subDir": null,
    "scope": "",
-   "rev": "1b09b3a52e333116878a80c7958abfbf32c63b93",
+   "rev": "455700fd9466ce5f6401c8f0f637cf91adb8c7d6",
    "name": "LeanCopilot",
    "manifestFile": "lake-manifest.json",
    "inputRev": "main",

@@ -4,9 +4,7 @@ open Lake DSL
 package «lean4-example» {
   moreLinkArgs := #[
     "-L./.lake/packages/LeanCopilot/.lake/build/lib",
-    "-llibctranslate2.dll",
-    "-L./.lake/packages/LeanCopilot/.lake/build/lib",
-    "-llibopenblas.dll"
+    "-lctranslate2"
   ]
 }
 
