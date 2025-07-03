@@ -12,12 +12,6 @@ theorem add_zero (a : Nat) : a + 0 = a := by
 theorem zero_add (a : Nat) : 0 + a = a := by
   rw [Nat.zero_add]
 
-theorem succ_add (a b : Nat) : succ a + b = succ (a + b) := by
-  rw [succ_eq_add_one, add_assoc]
-
-theorem add_succ (a b : Nat) : a + succ b = succ (a + b) := by
-  rw [succ_eq_add_one, add_assoc, add_comm 1]
-
 theorem add_comm_succ (a : Nat) : a + 1 = 1 + a := by
   rw [add_comm]
 
@@ -35,3 +29,9 @@ theorem zero_mul (a : Nat) : 0 * a = 0 := by
 
 theorem mul_comm' (a b : Nat) : a * b = b * a := by
   rw [mul_comm]
+
+  theorem mul_assoc' (a b c : Nat) : (a * b) * c = a * (b * c) := by
+    rw [mul_assoc]
+
+  theorem add_assoc' (a b c : Nat) : (a + b) + c = a + (b + c) := by
+    rw [add_assoc]
