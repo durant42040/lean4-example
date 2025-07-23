@@ -9,3 +9,7 @@ package «lean4-example» {
 lean_lib «Lean4Example» {
   -- add library configuration options here
 }
+
+lean_lib Lean4Repl {
+
+}
