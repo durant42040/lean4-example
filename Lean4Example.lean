@@ -2,7 +2,7 @@ theorem my_add_comm (n m : Nat) : n + m = m + n := by
   rw [Nat.add_comm]
 
 theorem succ_add_succ (a b : Nat) : Nat.succ a + Nat.succ b = Nat.succ (Nat.succ (a + b)) := by
-  sorry
+  simp [Nat.succ_eq_add_one, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
 
 theorem mul_assoc_my : ∀ a b c : Nat, (a * b) * c = a * (b * c) := by
   intro a b c
@@ -18,7 +18,7 @@ theorem my_add_comm_1 (n m : Nat) : n + m = m + n := by
   rw [Nat.add_comm]
 
 theorem succ_add_succ_1 (a b : Nat) : Nat.succ a + Nat.succ b = Nat.succ (Nat.succ (a + b)) := by
-  sorry
+  rw [Nat.succ_add, Nat.add_succ]
 
 theorem mul_assoc_my_1 : ∀ a b c : Nat, (a * b) * c = a * (b * c) := by
   intro a b c
